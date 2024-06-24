@@ -1,14 +1,7 @@
 .flex-container {
-    display: flex;
-    justify-content: center;
-}
-
-.flex-container {
-    background-color: #33333378;
-    list-style-type: none;
-    margin: 1px;
-    padding: 1px;
     font-size: 20px;
+    display: flex;
+    z-index: 1;
 }
 
 
@@ -20,16 +13,19 @@ body {
 
 
 header {
-    background-color: #333;
     color: #fff;
     padding: 0px;
     margin: 0px;
+    font-weight: bold;
 }
 
 nav ul {
     list-style: none;
     padding: 1;
     margin: 0;
+    background-color: #333333;
+    width: 100%;
+    position: fixed;
 }
 
 nav li {
@@ -97,6 +93,9 @@ nav a:hover {
     text-align: center;
     width: 50%;
     /* Cambiado para que el texto sea más ancho en dispositivos pequeños */
+    font-weight: bold;
+    -webkit-text-stroke: 1px #282828;
+	text-shadow: 0px 4px 4px #282828;
     margin: 20%;
     ;
     /* Espaciado para dispositivos pequeños */
@@ -104,17 +103,17 @@ nav a:hover {
     /* Espaciado para dispositivos pequeños */
     background-position: center;
     /* Aumentando el radio para suavizar las esquinas */
-    background-color: rgba(0, 0, 0, 0.311);
-    /* Ajustando la opacidad del fondo */
+   
 }
 
 .logo {
-    position: absolute;
-    margin: 29;
+    position: fixed;
+    margin: 15;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0.8;
+    z-index: 1;
     /* Ajusta la opacidad si es necesario */
 }
 
@@ -182,4 +181,13 @@ textarea {
 .inscritos {
     color: #fff;
 
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 21px;
+	-webkit-text-stroke: 1px #282828;
+	text-shadow: 0px 4px 4px #282828;
 }

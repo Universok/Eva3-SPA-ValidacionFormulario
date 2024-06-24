@@ -1,0 +1,185 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-container {
+    background-color: #33333378;
+    list-style-type: none;
+    margin: 1px;
+    padding: 1px;
+    font-size: 20px;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    /* Reducido el margen para dispositivos más pequeños */
+}
+
+/* Color de letras Menu */
+nav a {
+    text-decoration: none;
+    color: #e0a615;
+    font-size: 16px;
+
+}
+
+nav a:hover {
+    text-decoration: none;
+
+}
+
+.abajo {
+    color: #e6a500;
+    background-color: #333;
+    border-radius: 1em;
+}
+
+/* Aquí va la imagen de incio */
+.wrap {
+    max-width: 100%;
+    /* Haciendo que la imagen ocupe todo el ancho */
+    height: auto;
+    /* Para mantener la relación de aspecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centrando la imagen */
+    background: url(https://i.ibb.co/tJ453xv/0000227.jpg);
+    background-size: cover;
+    background-position: cover;
+
+}
+
+.about {
+    color: #e6a500;
+    border-color: #333;
+    text-align: center;
+    max-width: 100%;
+    padding: auto;
+    /* Haciendo que la imagen ocupe todo el ancho */
+    height: auto;
+    /* Para mantener la relación de aspecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centrando la imagen */
+    background: url(https://i.ibb.co/dKw7kgM/IMG-7073.jpg);
+    background-size: cover;
+    background-position: cover;
+}
+
+/* Aquí colocamos las propiedades del texto sobrepuesto */
+.wrap-texto {
+    color: white;
+    text-align: center;
+    width: 50%;
+    /* Cambiado para que el texto sea más ancho en dispositivos pequeños */
+    margin: 20%;
+    ;
+    /* Espaciado para dispositivos pequeños */
+    padding: 0%;
+    /* Espaciado para dispositivos pequeños */
+    background-position: center;
+    /* Aumentando el radio para suavizar las esquinas */
+    background-color: rgba(0, 0, 0, 0.311);
+    /* Ajustando la opacidad del fondo */
+}
+
+.logo {
+    position: absolute;
+    margin: 29;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.8;
+    /* Ajusta la opacidad si es necesario */
+}
+
+/* Aqui empieza la config del formulario */
+form {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div+div {
+    margin-top: 2em;
+}
+
+label {
+    display: inline-block;
+    width: 65px;
+    text-align: left;
+}
+
+input,
+textarea {
+    font: 1em sans-serif;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ffffff;
+}
+
+textarea {
+    vertical-align: top;
+    height: 5em;
+    resize: vertical;
+}
+
+/* Aqui el footer */
+.center-footer {
+    color: #e0a615;
+    display: flex;
+    justify-content: center;
+}
+
+.div-inscritos {
+    color: #fff;
+    font: 1em sans-serif;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #999;
+
+}
+
+.inscritos {
+    color: #fff;
+
+}

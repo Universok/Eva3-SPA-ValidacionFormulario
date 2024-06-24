@@ -4,22 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll("section");// Selecciona todas las secciones en el documento.
     const inscritosList = document.getElementById('inscritosList');
     let inscritos = [];
-
-
-    navLinks.forEach(link => {// Añade un evento de clic a cada enlace de navegación.
-        link.addEventListener("click", function (event) {
-            event.preventDefault();// Previene el comportamiento predeterminado del enlace (navegación)
-            const targetId = this.getAttribute("href").substring(1);// Obtiene el id del destino del enlace (sin el '#')
-            sections.forEach(section => {// Itera sobre todas las secciones para activar/desactivar la clase 'active'.
-                if (section.id === targetId) {
-                    section.classList.add("active");// Si el id de la sección coincide con el id de destino, añade la clase 'active'.
-                } else {
-                    section.classList.remove("active");// Si no coincide, remueve la clase 'active'.
-                }
-            });
-        });
-    });
-
+    
     const form = document.getElementById("contactForm"); // Selecciona el formulario de contacto por su id.
     form.addEventListener("submit", function (event) {// Añade un evento de envío al formulario.
         event.preventDefault(); // Previene el comportamiento predeterminado del formulario (envío).
